@@ -1,0 +1,42 @@
+/* global.css
+ * Reset básico, configuração de fontes e ajustes globais.
+ * Importa o dicionário de cores definido em theme.css.
+ */
+
+@import './theme.css';
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base tipográfica: 100% = 16px na maioria dos navegadores.
+ * Isso garante que toda a interface, construída em rem, escale
+ * proporcionalmente caso o usuário altere o tamanho de fonte
+ * configurado no navegador. */
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  min-height: 100vh;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input {
+  font-family: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
